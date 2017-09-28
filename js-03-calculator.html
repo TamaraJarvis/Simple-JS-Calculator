@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <title>JS-03-Calculator</title> 
+    
+    <style>
+        #calculator  {
+            background-color: darkturquoise;
+            width: 250px;
+            min-height: 400px;
+            padding: 30px;
+            margin: 30px auto;
+            text-align: center;
+            border: 2px solid #000;
+            border-radius: 10px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            color: black;
+            box-shadow: 8px 8px 8px #d0d0d0;
+        }
+        
+        #numInput {
+            background-color: coral;
+            color: black;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 5px 15px;
+            width: 60%;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+        
+        button {
+            background-color: coral;
+            color: black;
+            border-radius: 10px;
+            margin: 5px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+            
+        }
+        
+    </style>
+</head>
+
+    
+    
+<body>
+
+    <div id="calculator">
+        <h2>JS Calculator</h2>
+        
+        <input type="number" id="numInput">
+        
+        <h2 id="calcOutput"> JS Output </h2> <!--THIS IS WHERE CALCULATIONS AND RESULTS WILL APPEAR-->
+        
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('&#247;')">&#247;</button>
+        <button onclick="calculate('**')">E</button>
+        <button onclick="calculate('%')">R</button>
+        <!--<button onclick="calculator('sq')">&#8730;</button>-->
+        <br /><br />
+        <button onclick="calculate('=')">=</button>
+        <button onclick="calculate('clear')">C</button>
+        
+    </div>
+    
+
+    <!-- LINKED JAVASCRIPT FILE -->
+    <script src="js/js-03-calculator.js"></script>
+</body>
+    
+</html>
